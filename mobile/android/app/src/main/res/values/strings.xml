@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">testreact</string>
+    <string name="title_activity_main">testreact</string>
+    <string name="package_name">com.testreact.app</string>
+    <string name="custom_url_scheme">com.testreact.app</string>
+</resources>

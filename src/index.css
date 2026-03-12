@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
+
+:root {
+  --app-bg: radial-gradient(circle at top, rgba(109, 94, 252, 0.2), transparent 55%),
+    radial-gradient(circle at 20% 20%, rgba(255, 176, 32, 0.16), transparent 45%),
+    linear-gradient(160deg, #f7f8ff, #fef7f3 55%, #f5f9ff);
+  --app-text: #0f172a;
+  --sidebar-bg: linear-gradient(180deg, #0f172a, #111827 60%);
+  --sidebar-border: rgba(148, 163, 184, 0.2);
+  --sidebar-text: #f8fafc;
+  --sidebar-muted: rgba(248, 250, 252, 0.7);
+  --sidebar-active: rgba(248, 250, 252, 0.15);
+  --hero-bg: linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.72));
+  --hero-border: rgba(148, 163, 184, 0.25);
+  --hero-shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
+  --panel-bg: rgba(255, 255, 255, 0.9);
+  --panel-border: rgba(148, 163, 184, 0.2);
+  --panel-shadow: 0 22px 48px rgba(15, 23, 42, 0.08);
+  --text-muted: #64748b;
+  --text-subtle: #475569;
+  --positive: #12b886;
+  --negative: #fa5252;
+  --surface: #ffffff;
+  --alert-bg: linear-gradient(135deg, rgba(109, 94, 252, 0.14), rgba(99, 102, 241, 0.04));
+  --alert-border: rgba(99, 102, 241, 0.2);
+}
+
+[data-theme='dark'] {
+  --app-bg: radial-gradient(circle at top, rgba(56, 189, 248, 0.08), transparent 55%),
+    radial-gradient(circle at 20% 20%, rgba(99, 102, 241, 0.12), transparent 45%),
+    linear-gradient(160deg, #0b1120, #0f172a 55%, #0b1120);
+  --app-text: #e2e8f0;
+  --sidebar-bg: linear-gradient(180deg, #0b1120, #0b1120 60%);
+  --sidebar-border: rgba(148, 163, 184, 0.15);
+  --sidebar-text: #e2e8f0;
+  --sidebar-muted: rgba(226, 232, 240, 0.72);
+  --sidebar-active: rgba(148, 163, 184, 0.22);
+  --hero-bg: linear-gradient(135deg, rgba(15, 23, 42, 0.92), rgba(15, 23, 42, 0.7));
+  --hero-border: rgba(148, 163, 184, 0.2);
+  --hero-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+  --panel-bg: rgba(15, 23, 42, 0.8);
+  --panel-border: rgba(148, 163, 184, 0.18);
+  --panel-shadow: 0 22px 48px rgba(0, 0, 0, 0.35);
+  --text-muted: #94a3b8;
+  --text-subtle: #cbd5f5;
+  --positive: #34d399;
+  --negative: #f87171;
+  --surface: rgba(15, 23, 42, 0.95);
+  --alert-bg: linear-gradient(135deg, rgba(99, 102, 241, 0.18), rgba(15, 23, 42, 0.4));
+  --alert-border: rgba(99, 102, 241, 0.35);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Manrope', sans-serif;
+  background: #f7f8ff;
+  color: var(--app-text);
+}
+
+[data-theme='dark'] body {
+  background: #0b1120;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
